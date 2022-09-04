@@ -40,7 +40,7 @@ public class Main {
         //List<Project> projects = projectController.getAll();
         //System.out.println("Total de projetos: " + projects.size());
         
-        
+        /*
         TaskController taskController = new TaskController();
         Task task = new Task();
         task.setIdProject(4);
@@ -51,5 +51,7 @@ public class Main {
         task.setDeadline(new Date());
         
         taskController.save(task);
+        */
     }
+
 }

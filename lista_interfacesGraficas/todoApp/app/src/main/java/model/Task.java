@@ -18,31 +18,27 @@ public class Task {
     private int idProject;
     private String name;
     private String description;
-    private byte status;
-    private List<Tag> tags;
     private String notes;
-    private Date deadline;
     private boolean completed;
+    private Date deadline;
     private Date createdAt;
     private Date updatedAt;
-    private static final Logger LOG = Logger.getLogger(Task.class.getName());
 
-    public Task() {
-        this.completed = false;
-        this.createdAt = new Date();
-        this.updatedAt = new Date();
-    }
-
-    public Task(String name, String description, byte status, List<Tag> tags, String notes, Date deadline, boolean isCompleted, Date createdAt, Date updatedAt) {
+    public Task(int id, int idProject, String name, String description, String notes, boolean completed, Date deadline, Date createdAt, Date updatedAt) {
+        this.id = id;
+        this.idProject = idProject;
         this.name = name;
         this.description = description;
-        this.status = status;
-        this.tags = tags;
         this.notes = notes;
+        this.completed = completed;
         this.deadline = deadline;
-        this.completed = isCompleted;
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
+    }
+    
+    public Task(){
+        this.createdAt = new Date();
+        this.updatedAt = new Date();
     }
 
     public int getId() {
@@ -77,22 +73,6 @@ public class Task {
         this.description = description;
     }
 
-    public byte getStatus() {
-        return status;
-    }
-
-    public void setStatus(byte status) {
-        this.status = status;
-    }
-
-    public List<Tag> getTags() {
-        return tags;
-    }
-
-    public void setTags(List<Tag> tags) {
-        this.tags = tags;
-    }
-
     public String getNotes() {
         return notes;
     }
@@ -101,20 +81,20 @@ public class Task {
         this.notes = notes;
     }
 
-    public Date getDeadline() {
-        return deadline;
-    }
-
-    public void setDeadline(Date deadline) {
-        this.deadline = deadline;
-    }
-
     public boolean isCompleted() {
         return completed;
     }
 
     public void setCompleted(boolean completed) {
         this.completed = completed;
+    }
+
+    public Date getDeadline() {
+        return deadline;
+    }
+
+    public void setDeadline(Date deadline) {
+        this.deadline = deadline;
     }
 
     public Date getCreatedAt() {
@@ -132,4 +112,13 @@ public class Task {
     public void setUpdatedAt(Date updatedAt) {
         this.updatedAt = updatedAt;
     }
+
+    @Override
+    public String toString() {
+        return "Task{" + "id=" + id + ", idProject=" + idProject + ", name=" + name + ", description=" + description + ", notes=" + notes + ", completed=" + completed + ", deadline=" + deadline + ", createdAt=" + createdAt + ", updatedAt=" + updatedAt + '}';
+    }
+
+   
+   
+
 }

@@ -40,9 +40,12 @@ public class ConnectionFactory {
     }
     
     public static void closeConnection(Connection connection, PreparedStatement statement) {
-        closeConnection(connection);
+        //closeConnection(connection);
         try {
             if (statement != null) {
+                connection.close();
+            }
+            if(statement != null){
                 statement.close();
             }
         } catch (Exception ex) {
@@ -50,4 +53,6 @@ public class ConnectionFactory {
         }
         
     }
+
+   
 }

@@ -34,6 +34,26 @@ public class TaskTableModel extends AbstractTableModel {
     public String getColumnName(int columnIndex) {
         return columns[columnIndex];
     }
+    
+    //se é editável a coluna (apenas a parte da tarefa true ou false)
+    public boolean isCellEditable(int rowIndex, int columnIndex){
+        //coluna 3 = tarefas
+        return columnIndex == 3;
+        /*if(columnIndex == 3)
+            return true;
+        else
+            return false;
+        */
+    }
+    
+    //Check ma coluna - qual a classe do componente em determinada coluna(texto, int etc)
+    @Override //tipos de cada coluna
+    public Class<?> getColumnClass(int columnIndex){
+        if(tasks.isEmpty()){ //verifica se a lista é vazia, se for vazia..
+            return Object.class;
+        }
+        return this.getValueAt(0, columnIndex).getClass();//retorna a classe do dado achado no caso boolean retorna um check
+    }
 
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {//metodo que retorna linha e coluna específica
@@ -55,6 +75,12 @@ public class TaskTableModel extends AbstractTableModel {
             default:
                 return "Dados não encontrados";
         }
+    }
+    
+    //check marcado ou não
+    @Override
+    public void setValueAt(Object aValue, int rowIndex, int columnIndex){//passado como um objeto
+        tasks.get(rowIndex).setCompleted((boolean) aValue); //transforma de obj para boolean
     }
 
     public String[] getColumns() {

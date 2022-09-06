@@ -14,6 +14,8 @@ import java.util.List;
 import javax.swing.DefaultListModel;
 import model.Project;
 import model.Task;
+import util.DeadlineColumnCellRederer;
+import util.ButtonColumnCellRederer;
 import util.TaskTableModel;
 
 /**
@@ -30,10 +32,10 @@ public class MainScreen extends javax.swing.JFrame {
     
     public MainScreen() {
         initComponents();
-        decorateTableTask();
-        
+       
         initDataController();
         initComponetsModel();
+        decorateTableTask();
     }
 
     /**
@@ -457,6 +459,13 @@ public class MainScreen extends javax.swing.JFrame {
         //permite ordenar pelo nome em ordem alfabética
         jTableTasks.setAutoCreateRowSorter(true);
         
+        //definir o uso do CellRenderer implementado no util na coluna 2
+        jTableTasks.getColumnModel().getColumn(2).setCellRenderer(new DeadlineColumnCellRederer());
+        
+        //mostrar icones na coluna 4 editar e a 5 excluir
+        jTableTasks.getColumnModel().getColumn(4).setCellRenderer(new ButtonColumnCellRederer("edit")); //nome do arquivo png
+        
+        jTableTasks.getColumnModel().getColumn(5).setCellRenderer(new ButtonColumnCellRederer("delete"));
         //chama esse método em public MainScreen()
     }
     

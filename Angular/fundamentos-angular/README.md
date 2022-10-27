@@ -2,7 +2,7 @@
 
 Este repositório contém a atividade da [Capgemini](https://startcapgemini.com.br/) do curso de Angular.
 
-![gif]()
+![gif](https://github.com/Maarii72/Capgemini-JAVA/blob/main/Angular/fundamentos-angular/src/assets/recording-2022-10-27-01-53-45.gif)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
 

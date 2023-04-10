@@ -16,6 +16,8 @@ import { ExemploServicos2Component } from './exemplo-servicos2/exemplo-servicos2
 import { CicloDeVidaComponent } from './ciclo-de-vida/ciclo-de-vida.component';
 import { CicloDeVidaPaiComponent } from './ciclo-de-vida-pai/ciclo-de-vida-pai.component';
 import { CardComponent } from './card/card.component';
+import { MultiplicaPorPipe } from './multiplica-por.pipe';
+import { PipeCustomizadoComponent } from './pipe-customizado/pipe-customizado.component';
 
 
 @NgModule({
@@ -33,6 +35,8 @@ import { CardComponent } from './card/card.component';
     CicloDeVidaComponent,
     CicloDeVidaPaiComponent,
     CardComponent,
+    MultiplicaPorPipe,
+    PipeCustomizadoComponent,
     
   ],
   imports: [

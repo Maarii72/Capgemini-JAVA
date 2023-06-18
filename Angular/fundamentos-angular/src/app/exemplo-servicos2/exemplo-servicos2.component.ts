@@ -13,7 +13,7 @@ export class ExemploServicos2Component{
   constructor(public logger:LoggerService){}
 
   /* como ta público não vai precisar dessa
-  função, só ir lá direto
+  função, só ir lá direto html serviço2
   */
   adicionarProduto(){
     //console.log(`O nome do produto ${this.descricao} foi adicionado`);

@@ -4,6 +4,7 @@ import { PrimeiraPaginaComponent } from "./primeira-pagina/primeira-pagina.compo
 import { SegundaPaginaComponent } from "./segunda-pagina/segunda-pagina.component";
 import { PaginaNaoEncontradaComponent } from "./pagina-nao-encontrada/pagina-nao-encontrada.component";
 import { PaginaComParametrosComponent } from "./pagina-com-parametros/pagina-com-parametros.component";
+import { PaginaProtegidaComponent } from "./pagina-protegida/pagina-protegida.component";
 
 const routes: Routes =[
   {path: "primeira-pagina", component:PrimeiraPaginaComponent },
@@ -11,6 +12,8 @@ const routes: Routes =[
   {path: "", redirectTo: "primeira-pagina", pathMatch: "full"},
   {path: "**", component: PaginaNaoEncontradaComponent},
   {path: "pagina-com-parametros/:id", component: PaginaComParametrosComponent},
+  {path: "pagina-protegida", component: PaginaProtegidaComponent},
+  { path: 'lazy-loading', loadChildren: () => import('./lazy-loading/lazy-loading.module').then(m => m.LazyLoadingModule) },
 ]
 
 @NgModule({

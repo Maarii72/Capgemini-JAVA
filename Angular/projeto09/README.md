@@ -1,27 +1,11 @@
 # Projeto09
+## Desafio Angular
+Criar um formulário para cadastrar os seguintes dados:   
+*Nome   
+*1ª Nota   
+*2ª Nota
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
+Abaixo haverá uma tabela com o nome do aluno, a media e a condição (Aprovado ou Reprovado).   
+Cada Aluno terá um botão para alterar ou excluir seus dados.   
+Cadastre essas informações em um array.   
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

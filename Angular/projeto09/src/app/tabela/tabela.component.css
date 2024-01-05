@@ -1,0 +1,9 @@
+section{
+  margin: 3rem;
+}
+
+th{
+  background-color: #2b95ad;
+  font-weight: bold;
+  color: white;
+}

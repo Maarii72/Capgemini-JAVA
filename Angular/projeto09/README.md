@@ -7,5 +7,5 @@ Criar um formulário para cadastrar os seguintes dados:
 
 Abaixo haverá uma tabela com o nome do aluno, a media e a condição (Aprovado ou Reprovado).   
 Cada Aluno terá um botão para alterar ou excluir seus dados.   
-Cadastre essas informações em um array.   
+Cadastre essas informações em um array.
 

@@ -14,7 +14,7 @@ public class Gado implements InterfaceAnimal{
 
     @Override
     public void animalAbrigo() {
-        System.out.println("sim");
+        System.out.println("Estrebaria");
     }
     
 }

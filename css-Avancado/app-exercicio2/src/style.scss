@@ -47,6 +47,7 @@ header{
   height: 100px;
   display: flex;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 header .list-items{
@@ -75,12 +76,8 @@ header .menu{
 .flex-container-destino{
   display: flex;
   flex-direction: column;
-}
-
-.flex-container-destino{
-  display: flex;
   align-items: center;
-  margin-top: 2rem;
+  margin-bottom: -3rem;
   width: 85%;
 
   h2{
@@ -129,4 +126,42 @@ header .menu{
 
 .slideshow h2{
   color: $color-menu;
+}
+
+.flex-container-depoimentos{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 2rem;
+  margin-top: 5rem;
+  background-color: $color-depoimento;
+
+  div{
+    display: flex;
+    width: 80%;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-depoimento;
+
+    h3{
+      color: $color-font-menu;
+    }
+
+    p{
+      text-align: center;
+      padding: 0.5rem;
+      padding-inline: 1rem;
+      color: $color-font-menu;
+    }
+  }
+
+  img{
+    max-width:100px;
+    max-height:100px;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+  }
 }

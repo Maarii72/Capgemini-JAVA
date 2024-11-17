@@ -43,6 +43,7 @@ header {
   height: 100px;
   display: flex;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 header .list-items {
@@ -71,12 +72,8 @@ header .menu {
 .flex-container-destino {
   display: flex;
   flex-direction: column;
-}
-
-.flex-container-destino {
-  display: flex;
   align-items: center;
-  margin-top: 2rem;
+  margin-bottom: -3rem;
   width: 85%;
 }
 .flex-container-destino h2 {
@@ -132,4 +129,38 @@ header .menu {
 
 .slideshow h2 {
   color: #122A57;
+}
+
+.flex-container-depoimentos {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 2rem;
+  margin-top: 5rem;
+  background-color: #5980c7;
+}
+.flex-container-depoimentos div {
+  display: flex;
+  width: 80%;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  background-color: #5980c7;
+}
+.flex-container-depoimentos div h3 {
+  color: #fff;
+}
+.flex-container-depoimentos div p {
+  text-align: center;
+  padding: 0.5rem;
+  padding-inline: 1rem;
+  color: #fff;
+}
+.flex-container-depoimentos img {
+  max-width: 100px;
+  max-height: 100px;
+  width: auto;
+  height: auto;
+  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */

@@ -5,6 +5,12 @@
   margin: 0;
 }
 
+//mixin cores
+@mixin cores(){
+  background-color: $color-menu;
+  color: $color-font-menu;
+}
+
 body{
   display: flex;
   margin: auto;
@@ -28,23 +34,14 @@ ul li a{
 .flex-container{
   display: flex;
   margin: auto;
-  width: 85%;
+  width: 80 + 5%;
 }
 
 
 header{
-  background-color: $color-menu;
-  color: $color-font-menu;
+  @include cores;
   height: 100px;
   width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-header{
-  background-color: $color-menu;
-  color: $color-font-menu;
-  height: 100px;
   display: flex;
   align-items: center;
   margin-bottom: 2rem;
@@ -83,7 +80,15 @@ header .menu{
   h2{
     color: $color-menu;
     margin-bottom: 1rem;
+
+    @if(color ==  $color-menu){
+      color: $color-menu;
+    }@else{
+      color: aquamarine;
+    }
   }
+
+  
 
   p{
     width: 80%;
@@ -163,5 +168,22 @@ header .menu{
     width: auto;
     height: auto;
     border-radius: 50%;
+  }
+}
+
+.container{
+  display: flex;
+  align-items: center;
+}
+
+//looping
+$tamanho:10px;
+$corDiv: red;
+
+@for $i from 1 through 4{
+  $nome: 'div-' + $i;
+  #{$nome} {
+    font-size: $tamanho;
+    background-color: $corDiv;
   }
 }

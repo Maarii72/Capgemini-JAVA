@@ -1,0 +1,37 @@
+@cor1: rgb(5, 42, 77);
+@cor2: black;
+@cor3: rgb(247, 247, 247);
+@cor4: #7a7b7c;
+@width: 0.75;
+
+body{
+  background-color: @cor3;
+}
+
+.drop-shadow{
+  text-shadow: 2px 1px 1px #ccc;
+  text-decoration: underline;
+}
+
+h1{
+  .cores();
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 2px 1px 1px @cor4;
+}
+
+p{
+  color: if(iscolor(@cor1),@cor1, red);
+  text-align: center;
+  width: percentage(@width);
+
+  b{
+    color: @cor3;
+    background-color: @cor2;
+  }
+}
+
+.cores() {
+  color: @cor3;
+  background-color: @cor1*0.5;
+}

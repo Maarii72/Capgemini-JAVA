@@ -12,7 +12,7 @@ img{
 
 .App{
   min-height: 100vh;
-  width: 85vw;
+  //width: 85vw;
   max-width: 1900px;
   margin: 0rem auto;
 }
@@ -20,33 +20,5 @@ img{
 body{
   max-width: 100%;
   overflow-x: hidden;
-  background-color: #FFF;
-}
-
-nav{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 90px;
-}
-
-.nav-logo-container{
-  max-width: 150px;
-  max-height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.navbar-links-container a{
-  margin-right: 3rem;
-  text-decoration: none;
-  font-size: 1.1rem;
-  color: #878484;
-  font-weight: 600;
-}
-
-.navbar-links-container a:hover{
-  color: #04becd;
-  transition: all 0.4s ease-in-out;
+  background-color:#FFFFFF;
 }

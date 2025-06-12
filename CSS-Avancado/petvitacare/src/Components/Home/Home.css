@@ -1,0 +1,44 @@
+.home-container-navbar{
+  width: 85vw;
+  margin: 0rem auto;
+}
+
+.home-banner-container{
+  background-color: #e4e4e2;
+  display: flex;
+  height: 100vh;
+}
+
+.home-banner-content{
+  display: flex;
+  width: 85vw;
+  margin: 0rem auto;
+}
+
+.home-bannerImage-container{
+  display: flex;
+  max-width: 600px;
+  max-height: 100vh;
+  margin-top: -11vw;
+  align-items: center;
+  justify-content: center;
+  margin-left: -10vw;
+}
+
+.home-banner-text-content{
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1{
+    background-color: #004000;
+    width: 70%;
+    text-align: center;
+  }
+
+  span{
+    color: #04becd;
+  }
+}
